@@ -1,0 +1,121 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #816127db;
+    background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    font-family: Verdana, sans-serif;
+  }
+  
+  h1 {
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 10px;
+    text-shadow: 2px 3px 7px white;
+  }
+  
+  h2 {
+    font-family: Georgia, serif;
+    color: #3b6130;
+    text-shadow: 1px 1px 4px #ffffff;
+  }
+  
+  h6 {
+    font-family: "Shadows Into Light";
+    color: rgb(255, 255, 255); 
+    letter-spacing: 3px; 
+  }
+  
+  #botcorreo{
+    background-color: #3b6130;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    padding: 7px 7px;
+    cursor: pointer;
+    border-radius: 12px
+  }
+
+  #botcorreo:hover {
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 
+  }
+
+  header {
+    background-color: #000000a3;
+    padding: 1px;
+    text-align: center;
+    font-size: 30px;
+    color: #3b6130;
+  }
+
+  nav {
+    float:left;
+    width: 23%;
+    padding: 11px;
+    display: flex;
+  }
+
+  a:link, a:visited {
+    background-color: #000000a3;
+    color: white;
+    padding: 30px 15px 30px 15px;
+    margin: 11px 0px 11px 0px;
+    text-decoration: none;
+    display: list-item;
+  }
+  a:hover, a:active {
+    background-color: #3b6130
+  }
+  
+  ul {
+    background-color: #0000004d;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  article {
+    float: right;
+    padding: 17px;
+    margin: 11px 0px 11px 0px;
+    width: 77%;
+    background-color: #ffffff38;
+    font-family: Verdana, sans-serif;
+  }
+
+  #fotoperfil {
+    float:right;
+    width:200px;
+    height:170px; 
+    border-color: black; 
+    border-style: groove;
+    margin-top: 17px;
+  }
+  
+  /* borrar flotadores despues de las columnas*/
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  footer {
+    background-color: #000000a3;
+    padding: 10px;
+    text-align: center;
+    color: rgb(143, 143, 143);
+    font-size: 8px;
+  }
+  
+  /* para diseño responsivo*/
+  @media (max-width: 800px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+      display: inline-table;
+    }
+  }
